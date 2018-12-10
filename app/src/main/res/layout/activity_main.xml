@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/race"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <CheckBox
+        android:id="@+id/pikachu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="126dp" />
+
+    <CheckBox
+        android:id="@+id/minion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="120dp" />
+
+    <CheckBox
+        android:id="@+id/doraemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp" />
+
+    <CheckBox
+        android:id="@+id/nemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:id="@+id/seekBarNemo"
+        android:layout_width="629dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nemo"
+        android:layout_toEndOf="@+id/pikachu"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/nemo" />
+
+    <SeekBar
+        android:id="@+id/seekBarDoraemon"
+        android:layout_width="629dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_toEndOf="@+id/pikachu"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/doraemon" />
+
+    <SeekBar
+        android:id="@+id/seekBarMinion"
+        android:layout_width="629dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="128dp"
+        android:layout_toEndOf="@+id/pikachu"
+        android:progressDrawable="@android:color/transparent" />
+
+    <SeekBar
+        android:id="@+id/seekBarPikachu"
+        android:layout_width="629dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="133dp"
+        android:layout_toEndOf="@+id/pikachu"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/minion" />
+    <TextView
+        android:id="@+id/point"
+        android:textColor="#ff00"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:text="@string/_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:layout_width="128dp"
+        android:layout_height="126dp"
+        android:layout_alignTop="@+id/pikachu"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/play"
+        android:contentDescription="@string/todo" />
+</RelativeLayout>
